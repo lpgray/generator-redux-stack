@@ -1,10 +1,10 @@
 {
-  "name": "test",
+  "name": "redux-stack",
   "version": "0.1.0",
-  "description": "My module",
+  "description": "A react/redux boilerplate stack for personal use",
   "main": "lib/index.js",
   "license": "MIT",
-  "repository": "zakangelle/test",
+  "repository": "https://github.com/zakangelle/redux-stack.git",
   "scripts": {
     "start": "node server.js",
     "clean": "rimraf lib dist coverage",
@@ -22,15 +22,16 @@
   },
   "author": {
     "name": "Zak Angelle",
-    "email": "zaknotzak@gmail.com",
-    "url": "test"
+    "email": "zaknotzak@gmail.com"
   },
   "devEngines": {
     "node": ">=4"
   },
   "keywords": [
     "redux",
-    "test"
+    "react",
+    "boilerplate",
+    "generator"
   ],
   "devDependencies": {
     "babel": "^6.5.2",
