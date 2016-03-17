@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import counter from '../../src/stores/counter';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../src/actions/counter';
 
-describe('reducers', () => {
+describe('stores', () => {
   describe('counter', () => {
     it('should handle initial state', () => {
       expect(counter(undefined, {})).to.equal(0);

@@ -33,7 +33,7 @@ export default function configureStore(initialState) {
   );
 
   if (module.hot) {
-    // Enable Webpack hot module replacement for reducers
+    // Enable Webpack hot module replacement for stores
     module.hot.accept('../../stores', () => {
       const nextRootReducer = require('../../stores/index').default;
       store.replaceReducer(nextRootReducer);
