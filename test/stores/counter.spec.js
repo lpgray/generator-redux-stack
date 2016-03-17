@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import counter from '../../src/stores/counter';
+import counter from '../../src/reducers/counter';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../../src/actions/counter';
 
-describe('stores', () => {
+describe('reducers', () => {
   describe('counter', () => {
     it('should handle initial state', () => {
       expect(counter(undefined, {})).to.equal(0);

@@ -4,8 +4,8 @@ import createLogger from 'redux-logger';
 import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import { persistState } from 'redux-devtools';
-import rootReducer from '../../stores';
-import DevTools from '../../containers/DevTools';
+import rootReducer from '../reducers';
+import DevTools from '../containers/DevTools';
 
 const logger = createLogger({
   level: 'info',
@@ -33,9 +33,9 @@ export default function configureStore(initialState) {
   );
 
   if (module.hot) {
-    // Enable Webpack hot module replacement for stores
-    module.hot.accept('../../stores', () => {
-      const nextRootReducer = require('../../stores/index').default;
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept('../reducers', () => {
+      const nextRootReducer = require('../reducers/index').default;
       store.replaceReducer(nextRootReducer);
     });
   }
