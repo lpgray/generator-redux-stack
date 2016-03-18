@@ -5,10 +5,10 @@ const webpack = require('webpack');
 const historyApiFallback = require('connect-history-api-fallback');
 const port = process.env.PORT || 3000;
 
-var config = require('./webpack.config');
+var config = require('../webpack.config');
 
 if (process.env.NODE_ENV === 'production') {
-  config = require('./webpack.config.production');
+  config = require('../webpack.config.production');
 }
 
 const app = express();
