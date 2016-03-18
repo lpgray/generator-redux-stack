@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -9,8 +10,8 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/',
+    filename: 'bundle.[hash].js',
+    publicPath: '/',
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -19,6 +20,9 @@ module.exports = {
         NODE_ENV: JSON.stringify('development'),
       },
     }),
+    new HtmlWebpackPlugin({
+      template: './build/index.ejs'
+    })
   ],
   resolve: {
     extensions: ['', '.js'],

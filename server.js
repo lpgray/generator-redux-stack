@@ -23,7 +23,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: process.env.PWD });
+  res.sendFile('index.html', { root: process.env.PWD + '/dist' });
 });
 
 app.listen(port);
