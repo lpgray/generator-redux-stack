@@ -2,26 +2,25 @@
 
 A react/redux boilerplate stack for personal use.
 
-Extend [redux counter examples](https://github.com/reactjs/redux/tree/master/examples/counter) with [react-router](https://github.com/reactjs/react-router) and [react-router-redux](https://github.com/reactjs/react-router-redux). Besides, use [chai](https://github.com/chaijs/chai) and [sinon](https://github.com/sinonjs/sinon) instead of [expect](https://github.com/mjackson/expect).
+## Requirements
 
++ NodeJS
 
-## Start
+## Setup
 
 ```sh
 $ npm install
 $ npm start
 ```
 
-You can change server port using following command.
+## Release
 
 ```sh
-$ PORT=5000 npm start
+$ npm run build
 ```
 
-## Testing
+## Test
 
 ```sh
 $ npm test
 ```
-
-note: jsdom >= v4.0 can not work on node 0.x
