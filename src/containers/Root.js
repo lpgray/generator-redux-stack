@@ -6,7 +6,7 @@ import routes from '../config/routes';
 export default class Root extends Component {
   static propTypes = {
     store: PropTypes.object.isRequired,
-    history: RouterPropTypes.history.isRequired,
+    history: RouterPropTypes.history.isRequired
   };
 
   render() {

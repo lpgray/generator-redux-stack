@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 export default class Main extends Component {
   static propTypes = {
-    children: PropTypes.any.isRequired,
+    children: PropTypes.any.isRequired
   };
 
   render() {
