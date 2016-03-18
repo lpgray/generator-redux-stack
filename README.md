@@ -33,12 +33,6 @@ $ npm start
 
 To run the server in release mode, set the environment variable `NODE_ENV=production`
 
-## Release
-
-```sh
-$ npm run build
-```
-
 ## Test
 
 Run tests:
@@ -51,4 +45,12 @@ Watch and re-run tests:
 
 ```sh
 $ npm test:watch
+```
+
+## Release
+
+Generate a release build in `dist/`:
+
+```sh
+$ npm run build
 ```
