@@ -2,8 +2,13 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
-const config = require('./webpack.config');
 const port = process.env.PORT || 3000;
+
+var config = require('./webpack.config');
+
+if (process.env.NODE_ENV === 'production') {
+  config = require('./webpack.config.production');
+}
 
 const app = express();
 const compiler = webpack(config);
