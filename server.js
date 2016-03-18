@@ -26,11 +26,4 @@ app.get('*', (req, res) => {
   res.sendFile('index.html', { root: process.env.PWD });
 });
 
-app.listen(port, 'localhost', (err) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  console.log(`Listening at http://localhost:${port}`);
-});
+app.listen(port);
