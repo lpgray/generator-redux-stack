@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
 const historyApiFallback = require('connect-history-api-fallback');
+const app = express();
 const port = process.env.PORT || 3000;
 
 var config = require('../webpack.config');
@@ -11,7 +12,6 @@ if (process.env.NODE_ENV === 'production') {
   config = require('../webpack.config.production');
 }
 
-const app = express();
 const compiler = webpack(config);
 
 app.use(historyApiFallback({
