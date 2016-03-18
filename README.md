@@ -19,10 +19,19 @@ A react/redux boilerplate for personal use.
 
 ## Setup
 
+Install dependencies:
+
 ```sh
 $ npm install
+```
+
+Start the server:
+
+```sh
 $ npm start
 ```
+
+To run the server in release mode, set the environment variable `NODE_ENV=production`
 
 ## Release
 
@@ -32,6 +41,14 @@ $ npm run build
 
 ## Test
 
+Run tests:
+
 ```sh
 $ npm test
+```
+
+Watch and re-run tests:
+
+```sh
+$ npm test:watch
 ```
