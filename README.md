@@ -2,6 +2,8 @@
 
 A react/redux boilerplate for personal use.
 
+<img src='https://www.dropbox.com/s/r3q2da52xbihpyq/octopus.jpg?dl=0' width='320px'>
+
 ## Requirements
 
 + NodeJS
