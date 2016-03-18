@@ -2,7 +2,7 @@
   "name": "redux-stack",
   "version": "0.1.0",
   "description": "A react/redux boilerplate stack for personal use",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "repository": "https://github.com/zakangelle/redux-stack.git",
   "scripts": {
