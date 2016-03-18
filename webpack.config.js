@@ -21,7 +21,8 @@ module.exports = {
       },
     }),
     new HtmlWebpackPlugin({
-      template: './build/index.ejs'
+      template: './build/index.ejs',
+      filename: 'index.html'
     })
   ],
   resolve: {
