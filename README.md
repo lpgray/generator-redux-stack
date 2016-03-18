@@ -13,6 +13,7 @@ A react/redux boilerplate for personal use.
 * [express](http://expressjs.com/) - Server HTTP framework
 * [react](https://facebook.github.io/react/) - View layer
 * [redux](https://github.com/reactjs/redux) - Frontend state management
+* [sass](http://sass-lang.com/) - CSS preprocessor
 * [react-css-modules](https://github.com/gajus/react-css-modules) - CSS modules
 * [babel](https://babeljs.io/) - ES6/JSX compiler
 * [webpack](https://webpack.github.io/) - Module bundler
