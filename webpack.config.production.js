@@ -28,7 +28,7 @@ module.exports = {
       template: './build/index.html',
       filename: 'index.html'
     }),
-    new ExtractTextPlugin('./style/index.css', {
+    new ExtractTextPlugin('index.css', {
       allChunks: true
     })
   ],
@@ -43,8 +43,12 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
+        test: /\.scss$/,
+        loaders: [
+          'style',
+          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'sass'
+        ]
       }
     ]
   },
