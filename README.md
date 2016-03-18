@@ -1,6 +1,6 @@
 # redux-stack
 
-A react/redux boilerplate stack for personal use.
+A react/redux boilerplate for personal use.
 
 ## Requirements
 
