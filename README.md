@@ -6,6 +6,15 @@ A react/redux boilerplate stack for personal use.
 
 + NodeJS
 
+## Tech Stack
+
+* [express](http://expressjs.com/) - Server HTTP framework
+* [react](https://facebook.github.io/react/) - View layer
+* [redux](https://github.com/reactjs/redux) - Frontend state management
+* [babel](https://babeljs.io/) - ES6/JSX compiler
+* [webpack](https://webpack.github.io/) - Module bundler
+* [mocha](https://mochajs.org/) - Testing
+
 ## Setup
 
 ```sh
