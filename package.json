@@ -25,7 +25,10 @@
     "email": "zaknotzak@gmail.com"
   },
   "devEngines": {
-    "node": ">=4"
+    "node": "4.2.4"
+  },
+  "engines": {
+    "node": "4.2.4"
   },
   "keywords": [
     "redux",
