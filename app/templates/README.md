@@ -1,13 +1,10 @@
-# generator-redux-stack
+# <%= moduleName %>
 
-A react/redux generator for personal use.
-
-<img src='https://www.dropbox.com/s/r3q2da52xbihpyq/octopus.jpg?raw=1' width='400px'>
+App description.
 
 ## Requirements
 
 + NodeJS
-+ Yeoman
 
 ## Tech Stack
 
@@ -19,8 +16,40 @@ A react/redux generator for personal use.
 * [webpack](https://webpack.github.io/) - Module bundler
 * [mocha](https://mochajs.org/) - Testing
 
-## Usage
+## Setup
+
+Install dependencies:
 
 ```sh
-$ yo redux-stack
+$ npm install
+```
+
+Start the server:
+
+```sh
+$ npm start
+```
+
+To run the server in release mode, set the environment variable `NODE_ENV=production`
+
+## Test
+
+Run tests:
+
+```sh
+$ npm test
+```
+
+Watch and re-run tests:
+
+```sh
+$ npm test:watch
+```
+
+## Release
+
+Generate a release build in `dist`:
+
+```sh
+$ npm run build
 ```
