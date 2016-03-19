@@ -19,9 +19,14 @@ A react/redux generator for personal use.
 * [webpack](https://webpack.github.io/) - Module bundler
 * [mocha](https://mochajs.org/) - Testing
 
-## Usage
+## Setup
 
 ```sh
 $ npm install -g generator-redux-stack
+```
+
+## Usage
+
+```sh
 $ yo redux-stack
 ```
