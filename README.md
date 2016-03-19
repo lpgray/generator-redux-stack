@@ -22,5 +22,6 @@ A react/redux generator for personal use.
 ## Usage
 
 ```sh
+$ npm install -g generator-redux-stack
 $ yo redux-stack
 ```
