@@ -28,5 +28,6 @@ $ npm install -g generator-redux-stack
 ## Usage
 
 ```sh
+$ mkdir app-name && cd app-name
 $ yo redux-stack
 ```
