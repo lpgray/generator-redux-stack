@@ -50,7 +50,7 @@ $ npm test:watch
 
 ## Release
 
-Generate a release build in `dist/`:
+Generate a release build in `dist`:
 
 ```sh
 $ npm run build
