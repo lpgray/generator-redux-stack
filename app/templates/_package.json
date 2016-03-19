@@ -1,7 +1,7 @@
 {
-  "name": "<%= moduleName %>",
+  "name": "<%= appName %>",
   "version": "0.1.0",
-  "description": "App description.",
+  "description": "<%= appDescription %>",
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {

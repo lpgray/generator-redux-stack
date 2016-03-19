@@ -11,17 +11,25 @@ module.exports = yeoman.generators.Base.extend({
 	init: function() {
     var cb = this.async();
 
-    this.prompt([{
-			name: 'moduleName',
-			message: 'What do you want to name your app?',
-			default: this.appname.replace(/\s/g, '-'),
-			filter: function(val) {
-				return _s.slugify(val);
-			}
-		}],
+    this.prompt([
+      {
+        name: 'appName',
+        message: 'What do you want to name your app?',
+        default: this.appname.replace(/\s/g, '-'),
+        filter: function(val) {
+          return _s.slugify(val);
+        }
+      },
+      {
+        name: 'appDescription',
+        message: 'What do you want to use for your app description?'
+      }
+		],
     function(props) {
       var asyncCount = 0;
-      this.moduleName = props.moduleName;
+      console.log(props.appName);
+      this.appName = props.appName;
+      this.appDescription = props.appDescription;
 
       this.template('editorconfig', '.editorconfig');
       this.template('gitignore', '.gitignore');

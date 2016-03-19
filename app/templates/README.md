@@ -1,6 +1,6 @@
-# <%= moduleName %>
+# <%= appName %>
 
-App description.
+<%= appDescription %>
 
 ## Requirements
 
