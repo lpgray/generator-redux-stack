@@ -1,12 +1,13 @@
+import { createReducer } from 'redux-create-reducer';
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
 
-export default function counter(state = 0, action) {
-  switch (action.type) {
-    case INCREMENT_COUNTER:
-      return state + 1;
-    case DECREMENT_COUNTER:
-      return state - 1;
-    default:
-      return state;
+const initialState = 0;
+
+export default createReducer(initialState, {
+  [INCREMENT_COUNTER](state, action) {
+    return state + 1;
+  },
+  [DECREMENT_COUNTER](state, action) {
+    return state - 1;
   }
-}
+});
