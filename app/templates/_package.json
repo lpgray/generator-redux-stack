@@ -19,6 +19,8 @@
     "prepublish": "npm run clean && npm run build",
     "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json"
   },
+  "devEngines": {},
+  "engines": {},
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
