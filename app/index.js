@@ -53,11 +53,6 @@ module.exports = yeoman.generators.Base.extend({
       this.directory('src', 'src');
       this.directory('test', 'test');
 
-      if (this.requireApiServer) {
-        this.template('_api/server.index.js', 'server/index.js');
-        this.template('_api/webpack.config.js', 'webpack.config.js');
-      }
-
       cb();
 
     }.bind(this));
