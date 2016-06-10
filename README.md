@@ -1,6 +1,6 @@
 # generator-redux-stack
 
-A react/redux generator for personal use.
+A react/redux generator with all the build tooling goodies.
 
 <img src='https://www.dropbox.com/s/r3q2da52xbihpyq/octopus.jpg?raw=1' width='400px'>
 
