@@ -1,6 +1,6 @@
 {
   "name": "generator-redux-stack",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A react/redux generator with all the build tooling goodies.",
   "license": "MIT",
   "files": [
