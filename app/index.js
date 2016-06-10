@@ -14,7 +14,7 @@ module.exports = yeoman.generators.Base.extend({
     this.prompt([
       {
         name: 'appName',
-        message: 'What do you want to name your app?',
+        message: 'What\'s the name of your app?',
         default: this.appname.replace(/\s/g, '-'),
         filter: function(val) {
           return _s.slugify(val);
@@ -22,14 +22,20 @@ module.exports = yeoman.generators.Base.extend({
       },
       {
         name: 'appDescription',
-        message: 'What do you want to use for your app description?'
+        message: 'What\'s the app description?'
+      },
+      {
+        name: 'requireApiServer',
+        type: 'confirm',
+        message: 'Do you need an API server?',
+        default: false
       }
 		],
     function(props) {
       var asyncCount = 0;
-      console.log(props.appName);
       this.appName = props.appName;
       this.appDescription = props.appDescription;
+      this.requireApiServer = props.requireApiServer;
 
       this.template('editorconfig', '.editorconfig');
       this.template('gitignore', '.gitignore');
@@ -46,6 +52,11 @@ module.exports = yeoman.generators.Base.extend({
       this.directory('server', 'server');
       this.directory('src', 'src');
       this.directory('test', 'test');
+
+      if (this.requireApiServer) {
+        this.template('_api/server.index.js', 'server/index.js');
+        this.template('_api/webpack.config.js', 'webpack.config.js');
+      }
 
       cb();
 
