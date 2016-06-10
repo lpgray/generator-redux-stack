@@ -41,3 +41,7 @@ Generate the scaffolding:
 ```sh
 $ yo redux-stack
 ```
+
+## License
+
+MIT
