@@ -22,13 +22,22 @@ A react/redux generator with all the build tooling goodies.
 
 ## Setup
 
+Install it globally:
+
 ```sh
 $ npm install -g generator-redux-stack
 ```
 
 ## Usage
 
+Make a folder for your app:
+
 ```sh
 $ mkdir app-name && cd app-name
+```
+
+Generate the scaffolding:
+
+```sh
 $ yo redux-stack
 ```
