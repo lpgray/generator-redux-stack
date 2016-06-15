@@ -42,6 +42,12 @@ Generate the scaffolding:
 $ yo redux-stack
 ```
 
+Boot up the app:
+
+```sh
+$ npm start
+```
+
 ## License
 
 MIT
