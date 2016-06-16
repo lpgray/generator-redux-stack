@@ -42,7 +42,7 @@ Generate the scaffolding:
 $ yo redux-stack
 ```
 
-Boot up the app:
+Boot up the app at [http://localhost:3000](http://localhost:3000):
 
 ```sh
 $ npm start
