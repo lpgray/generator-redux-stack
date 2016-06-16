@@ -25,7 +25,7 @@ Install dependencies:
 $ npm install
 ```
 
-Start the server:
+Start the server at [http://localhost:3000](http://localhost:3000):
 
 ```sh
 $ npm start
