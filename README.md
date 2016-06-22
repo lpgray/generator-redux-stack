@@ -22,9 +22,9 @@ A react/redux generator with all the build tooling goodies.
 
 ## Dev Tooling
 
-* Hot module replacement (with [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware))
-* Redux time travel environment (with [redux-devtools](https://github.com/gaearon/redux-devtools) (with [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools-log-monitor))
-* Redux action log (with [redux-logger](https://github.com/evgenyrodionov/redux-logger))
+* Hot module replacement (w/ [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware))
+* Redux time travel environment (w/ [redux-devtools](https://github.com/gaearon/redux-devtools) and [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools-log-monitor))
+* Redux action log (w/ [redux-logger](https://github.com/evgenyrodionov/redux-logger))
 
 ## Setup
 
