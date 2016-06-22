@@ -20,6 +20,12 @@ A react/redux generator with all the build tooling goodies.
 * [webpack](https://webpack.github.io/) - Module bundler
 * [mocha](https://mochajs.org/) - Testing framework
 
+## Dev Tooling
+
+* Hot module replacement (with [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware))
+* Redux time travel environment (with [redux-devtools](https://github.com/gaearon/redux-devtools) (with [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools-log-monitor))
+* Redux action log (with [redux-logger](https://github.com/evgenyrodionov/redux-logger))
+
 ## Setup
 
 Install it globally:
