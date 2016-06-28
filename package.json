@@ -8,12 +8,20 @@
   ],
   "keywords": [
     "yeoman-generator",
+    "generator",
     "plugin",
+    "app",
     "boilerplate",
     "template",
     "scaffold",
+    "starter",
+    "kit",
+    "seed",
     "redux",
-    "react"
+    "react",
+    "webpack",
+    "babel",
+    "sass"
   ],
   "repository": {
     "type": "git",
