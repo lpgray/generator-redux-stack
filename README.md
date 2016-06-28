@@ -2,7 +2,7 @@
 
 A react/redux generator with all the build tooling goodies.
 
-<img src='https://dl.dropboxusercontent.com/s/r3q2da52xbihpyq/octopus.jpg' width='400px'>
+<img src='https://dl.dropboxusercontent.com/s/4w9bsn1ti8zbz7b/octo.png' width='400px'>
 
 ## Requirements
 

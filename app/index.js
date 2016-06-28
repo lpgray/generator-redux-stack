@@ -29,6 +29,12 @@ module.exports = yeoman.generators.Base.extend({
         type: 'confirm',
         message: 'Do you need an API server?',
         default: false
+      },
+      {
+        name: 'requireFileLoader',
+        type: 'confirm',
+        message: 'Do you need a static asset loader to import images and other binary files?',
+        default: false
       }
 		],
     function(props) {
@@ -36,6 +42,7 @@ module.exports = yeoman.generators.Base.extend({
       this.appName = props.appName;
       this.appDescription = props.appDescription;
       this.requireApiServer = props.requireApiServer;
+      this.requireFileLoader = props.requireFileLoader;
 
       this.template('editorconfig', '.editorconfig');
       this.template('gitignore', '.gitignore');
