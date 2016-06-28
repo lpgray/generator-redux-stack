@@ -13,7 +13,6 @@ import Counter from '../../src/components/Counter';
 function setup() {
   const actions = {
     increment: spy(),
-    incrementIfOdd: spy(),
     incrementAsync: spy(),
     decrement: spy()
   };
@@ -44,15 +43,9 @@ describe('Counter component', () => {
     expect(actions.decrement.called).to.be.true;
   });
 
-  it('third button should call incrementIfOdd', () => {
+  it('third button should call incrementAsync', () => {
     const { buttons, actions } = setup();
     Simulate.click(buttons[2]);
-    expect(actions.incrementIfOdd.called).to.be.true;
-  });
-
-  it('fourth button should call incrementAsync', () => {
-    const { buttons, actions } = setup();
-    Simulate.click(buttons[3]);
     expect(actions.incrementAsync.called).to.be.true;
   });
 });
