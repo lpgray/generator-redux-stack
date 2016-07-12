@@ -59,7 +59,7 @@ module.exports = yeoman.generators.Base.extend({
       cb();
 
     }.bind(this));
-	},
+  },
   install: function() {
     this.installDependencies({ bower: false });
   }
