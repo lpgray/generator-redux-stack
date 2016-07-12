@@ -1,14 +1,10 @@
 'use strict';
 
-var normalizeUrl = require('normalize-url');
-var path = require('path');
-var humanizeUrl = require('humanize-url');
 var yeoman = require('yeoman-generator');
-var mkdirp = require('mkdirp');
 var _s = require('underscore.string');
 
 module.exports = yeoman.generators.Base.extend({
-	init: function() {
+  init: function() {
     var cb = this.async();
 
     this.prompt([
@@ -36,7 +32,7 @@ module.exports = yeoman.generators.Base.extend({
         message: 'Do you need a static asset loader to import images and other binary files?',
         default: false
       }
-		],
+    ],
     function(props) {
       var asyncCount = 0;
       this.appName = props.appName;
@@ -64,7 +60,7 @@ module.exports = yeoman.generators.Base.extend({
 
     }.bind(this));
 	},
-	install: function() {
+  install: function() {
     this.installDependencies({ bower: false });
   }
 });
