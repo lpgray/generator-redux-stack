@@ -9,7 +9,12 @@
     "react/jsx-no-bind": 0,
     "react/sort-comp": 0,
     "comma-dangle": [2, "never"],
-    "no-shadow": 0
+    "no-shadow": 0,
+
+    "no-global-assign": 0,
+    "no-unsafe-negation": 0,
+    "react/jsx-filename-extension": 0,
+    "react/display-name": 0,
   },
   "plugins": [
     "react"

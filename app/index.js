@@ -20,18 +20,18 @@ module.exports = yeoman.generators.Base.extend({
         name: 'appDescription',
         message: 'What\'s the app description?'
       },
-      {
-        name: 'requireApiServer',
-        type: 'confirm',
-        message: 'Do you need an API server?',
-        default: false
-      },
-      {
-        name: 'requireFileLoader',
-        type: 'confirm',
-        message: 'Do you need a static asset loader to import images and other binary files?',
-        default: false
-      }
+    //   {
+    //     name: 'requireApiServer',
+    //     type: 'confirm',
+    //     message: 'Do you need an API server?',
+    //     default: false
+    //   },
+    //   {
+    //     name: 'requireFileLoader',
+    //     type: 'confirm',
+    //     message: 'Do you need a static asset loader to import images and other binary files?',
+    //     default: false
+    //   }
     ],
     function(props) {
       var asyncCount = 0;

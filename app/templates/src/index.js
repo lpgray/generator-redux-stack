@@ -9,7 +9,7 @@ const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
 if (process.env.NODE_ENV === 'development') {
-  const createDevToolsWindow = require('./utils/createDevToolsWindow').default;
+  const createDevToolsWindow = require('./utils/createDevToolsWindow');
   createDevToolsWindow(store);
 }
 
